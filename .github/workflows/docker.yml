@@ -21,3 +21,10 @@ jobs:
           file: docker/forward/Dockerfile
           push: true
           tags: hsmtkk/cuddly-waffle:forward
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          file: docker/grpcserver/Dockerfile
+          push: true
+          tags: hsmtkk/cuddly-waffle:grpcserver
