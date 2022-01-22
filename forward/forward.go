@@ -72,5 +72,4 @@ func (hdl *messageHandler) Handle(natsMsg *nats.Msg) {
 		hdl.sugar.Errorw("failed to set redis", "error", err)
 		return
 	}
-	return
 }
